@@ -1,8 +1,8 @@
-const token = '5db5c38809c2d424e08ea5ae0d6817fd9d521dd48c5d5f1f'
+const token = '879b81e9ef46e5a469b9932b422c110b5dd990e5eee41a84'
 
 export const server_calls = {
     get: async () => { 
-        const response = await fetch(`http://127.0.0.1:5000/api/cars`,
+        const response = await fetch(`https://car-inventory-crwa.onrender.com/api/cars`,
         {
             method: 'GET',
             headers: {
@@ -21,7 +21,7 @@ export const server_calls = {
     },
 
     create: async (data: any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/cars`,
+        const response = await fetch(`https://car-inventory-crwa.onrender.com/api/cars`,
         {
             method: 'POST',
             headers: {
@@ -41,7 +41,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data:any = {}) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/car${id}`,
+        const response = await fetch(`https://car-inventory-crwa.onrender.com/api/car/${id}`,
         {
             method: 'PUT',
             headers: {
@@ -61,7 +61,7 @@ export const server_calls = {
     },
 
     delete: async (id: string) => {
-        const response = await fetch(`http://127.0.0.1:5000/api/car${id}`,
+        const response = await fetch(`https://car-inventory-crwa.onrender.com/api/cars/${id}`,
         {
             method: 'DELETE',
             headers: {

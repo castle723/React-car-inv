@@ -63,7 +63,7 @@ function DataTable() {
             rows={contactData} 
             columns={columns}
             checkboxSelection={true} 
-            onRowSelectionModelChange={ (item:any) => {
+            onSelectionModelChange={ (item:any) => {
                 setSelectionModel(item);
             }}
             componentsProps={{
