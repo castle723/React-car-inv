@@ -1,3 +1,4 @@
+// @ts-ignore
 import Background from '../assets/images/car-bg.jpeg'
 
 function home() {
